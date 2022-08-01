@@ -10,7 +10,7 @@ ADD . /mkr
 WORKDIR /mkr
 
 ## Build Step
-RUN go mod tidy
+RUN go mod tidy -compat=1.17
 RUN go build
 
 # Package State
